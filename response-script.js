@@ -20,7 +20,8 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-console.log($task);
+console.log($task.fetch);
+console.log($configuration);
 $prefs.setValueForKey("guoshuhao-jwt-resp", body);
 
 body = JSON.stringify(obj);
